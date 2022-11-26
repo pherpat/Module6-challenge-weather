@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Weather Dashboard</h1>
+        </header>
+        <section id="mainGrid">
+            <aside>
+                <h4>Search for a City:</h4>
+                <input type="text" class="form-control" id="cityInput" name="cityInput"/>
+                <button type="submit" value="Submit" class="btn btn-info"> Search</button>
+                <h2 class="name"></h2>
+                <ul id="cities-list"></ul>
+            </aside>
+            <div id="mainContent">
+                <div id="mainCity">
+                    <h4 id="cityName"></h4><img id="icon">
+                    <ul>
+                    <li>Condition: <span id="condition"></span></li>    
+                    <li>Temperature: <span id="tempeture"></span></li>
+                    <li>Humidity: <span id="humidity"></span></li>
+                    <li>Wind: <span id="cWind"></span></li>
+                    
+                    </ul>
+                </div>
+                <div id="forecast">
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/logic/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+</body>
+
+</html>
