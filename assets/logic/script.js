@@ -8,8 +8,6 @@
 // variables and function for Forecast cards 
 
 
-
-
 // Ready Function 
 $(document).ready(function() {
 
