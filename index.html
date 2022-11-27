@@ -24,10 +24,12 @@
                 <h4>Search for a City:</h4>
                 <input type="text" class="form-control" id="cityInput" name="cityInput"/>
                 <button type="submit" value="Submit" class="btn btn-info"> Search</button>
-                <h2 class="name"></h2>
                 <ul id="cities-list"></ul>
             </aside>
             <div id="mainContent">
+                <div id="welcome"><h1>Welcome to our Weather Dashboard!</h1><p>Type the city you are looking for into the search box</p></div>
+                <div id="error"><h1>Oops!</h1><p>Please check your spelling or enter a valid city name.</p></div>
+
                 <div id="mainCity">
                     <h4 id="cityName"></h4><img id="icon">
                     <ul>
@@ -38,6 +40,7 @@
                     
                     </ul>
                 </div>
+                <h4 id="fdForecast"></h4>
                 <div id="forecast">
                 </div>
             </div>
