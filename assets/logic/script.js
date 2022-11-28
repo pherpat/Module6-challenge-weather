@@ -147,7 +147,7 @@ function createForecast(inputBox) {
   let title = $("<h5>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
 
   // Weather Icon
-  let img = $("<img>").attr("src", "http://openweathermap.org/img/w/" +
+  let img = $("<img>").attr("src", "https://openweathermap.org/img/w/" +
     data.list[i].weather[0].icon + ".png");
 
     // variables, class, and text
